@@ -1,4 +1,5 @@
 <head>
+    <script type="text/javascript" src="QuiSom.js"></script>
     <title>SantjuRedRose | Qui som?</title>
     <link rel="stylesheet" href="QuiSom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,15 @@
             La Direcció del diari aposta per una informació atractiva, d'interès i, sobretot, nostra.<br>           
             Direcció.
         </p>
-        <img src="Assets/fotoNens.png">       
+        <!--<img src="Assets/fotoNens.png"> -->
+        <img id="myImg" src="Assets/fotoNens.png" alt="Snow" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>
     </div>
-    
-    
-    
 </body>
 
