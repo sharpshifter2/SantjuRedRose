@@ -1,0 +1,66 @@
+
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-image: url("Assets/dark\ hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        padding: auto;
+        background-color: #e1e2d9;
+        color: white;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+
+    .btn {
+        overflow: hidden;
+        background-color: rgb(131, 54, 54);
+        margin: 0;
+        padding: 0;
+      }
+    
+    .btn a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 15%;
+        font-family: 'Noto Serif Display', serif;
+    }
+    
+    .btn a:hover{
+        animation-name: background-color;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes background-color{
+        100%{
+        background-color: white;
+        color: black;
+        }
+    }
+
+    a {
+        word-wrap: break-word;
+    }
+     
+
+    
+
+    
