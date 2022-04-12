@@ -5,6 +5,7 @@
         background-image: url("Assets/dark\ hero.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
     }
     
 
@@ -28,32 +29,23 @@
     .btn {
         overflow: hidden;
         background-color: rgb(131, 54, 54);
-        margin: 0;
-        padding: 0;
+        text-align: center;
       }
     
     .btn a{
-        float: left;
-        display: block;
+        display: inline-block;
         color: #f2f2f2;
         text-align: center;
-        padding: 8px 10px;
+        padding: 8px 25px;
         text-decoration: none;
         font-size: 17px;
-        width: 15%;
         font-family: 'Noto Serif Display', serif;
+        transition: linear 0.3s all;
     }
     
     .btn a:hover{
-        animation-name: background-color;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    @keyframes background-color{
-        100%{
+        color: rgb(131, 54, 54);
         background-color: white;
-        color: black;
-        }
     }
 
     a {

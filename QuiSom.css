@@ -1,9 +1,11 @@
 *{
     margin: 0%;
     padding: 0%;
-    background-color: rgb(217, 204, 207);
 }
 
+body{
+  background-color: white;
+}
 h1{
     font-family:'Courier New', Courier, monospace;
     width: 100%;
@@ -20,13 +22,12 @@ h1{
 
 p{
   font-family: 'Montserrat', sans-serif;
-    position: center;
+    text-align: center;
 }
 
 .pt{
     font-size: 110%;
     padding: 10%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Style the Image Used to Trigger the Modal */
