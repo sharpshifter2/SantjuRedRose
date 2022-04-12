@@ -120,6 +120,8 @@
         color: white;
         padding-top: 30px;
         padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       .f1{
@@ -128,6 +130,24 @@
         color: white;
         font-size: large;
       }
+
+      .container{
+        max-width: 1170px;
+        margin:auto;
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .footer-col{
+        width: 100%;
+        padding: 0 15px;
+     }
+
+      
+      
+      
 
 
      
