@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <script src="From.js"></script>
 </head>
 <body>
     <form action="Form.py" method="post">
@@ -16,7 +17,7 @@
         <div class="Text">
             <p><input type="text" name="name" placeholder="Nom i Cognom:"></p><br>
             <p><textarea cols=50 rows=8 name="opinion" placeholder="Fes una Carta:"></textarea></p>
-            <div class="btn"><input type="submit" value="Enviar" name="Send"></div><br>
+            <div class="btn"><input type="submit" value="Enviar" name="Send" onclick="fun();"></div><br>
         </div>
     </form>
 </body>
