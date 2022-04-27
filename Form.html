@@ -8,16 +8,16 @@
     <script src="From.js"></script>
 </head>
 <body>
-    <form action="Form.py" method="post">
+    <form action="form.php" method="post">
         <img src="Assets/form header.png">
         <h5>FES UNA CARTA</h5>
         <hr>    
     <br> 
     <br>     
         <div class="Text">
-            <p><input type="text" name="name" placeholder="Nom i Cognom:"></p><br>
-            <p><textarea cols=50 rows=8 name="opinion" placeholder="Fes una Carta:"></textarea></p>
-            <div class="btn"><input type="submit" value="Enviar" name="Send" onclick="fun();"></div><br>
+            <p><input type="text" name="nom" placeholder="Nom i Cognom:" id="nom"></p><br>
+            <p><textarea cols=50 rows=8 name="text" placeholder="Fes una Carta:" id="text"></textarea></p>
+            <div class="btn"><input type="submit" value="Enviar" name="send"></div><br>
         </div>
     </form>
 </body>
