@@ -70,6 +70,17 @@ h5{
     line-height: .5px;
 }
 
+a{
+    
+    color: black;
+}
+
+.info{
+    padding: 20px 16px;
+    font-size: 15px;
+    float: right;
+}
+
 
   
     
