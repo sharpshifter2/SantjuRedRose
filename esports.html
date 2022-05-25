@@ -7,44 +7,38 @@
     <div class="gcontainer"></div>
 
     <div class="bk">
-        <h1><img src="Assets/h1.png"></h1>   
-        <h2>ESPORTS</h2>
-        <h3>f</h3>
-    </div>
+      <h1><img src="Assets/h1.png"></h1>   
+      <h2 class="h2p">ESPORTS</h2>
+      <h3 class="h3p">f</h3>
+  </div>
 
     <!--noticies-->
 
     
-<div class="slideshow-container">
+    <div class="row2">
 
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="Assets/Morera porter.jpg" style="width:100%">
-      <div class="text"><a href="https://docs.google.com/document/d/13m5_XbtPS-Fo_Phz2FJnLs_nakXTYqbh/edit">LLEGEIX MES</a></div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="Assets/Fontanals.jpg" style="width:100%">
-      <div class="text"><a href="#">LLEGEIX MES</a></div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="Assets/hero-bg.jpg" style="width:100%">
-      <div class="text"><a href="#">LLEGEIX MES</a></div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
+      <div class="column">
+        <a href="">
+        <img src="https://estaticos-cdn.sport.es/clip/651ffdf8-a255-4f06-b22c-d2e77f86eef6_source-aspect-ratio_default_0.jpg" alt="Nature" style="width:100%">
+      </a>
+        <h3>EL REIAL MADRID ASALTA LONDRES</h3>
+      </div>
+
+      <div class="column">
+        <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/03/23/16480300498046.jpg" alt="Nature" style="width:100%">
+        <h3> Kilian Jornet crea una nova marca juntament amb Camper</h3> 
+      </div>
+
+      <div class="column">
+        <img src="Assets/Morera porter.jpg" alt="Nature" style="width:100%">
+        <h3>MÉS QUE UN BON PORTER</h3> 
+      </div>
+
+      <div class="column">
+        <img src="https://i0.wp.com/somosinvictos.com/wp-content/uploads/2022/04/Xavi.jpg?fit=770%2C362&ssl=1" alt="Nature" style="width:100%">
+        <h3>LA XAVINETA EXISTEIX?</h3> 
+      </div>
+
     </div>
 
     <footer>
@@ -59,33 +53,6 @@
         </div>
     </footer>
     
-    <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
     
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
 
 </body>

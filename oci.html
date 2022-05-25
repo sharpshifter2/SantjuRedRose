@@ -1,93 +1,48 @@
 <head>    
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="iamge/png" href="Assets/RedRose.png">
-    <title>SantjuRedRose | Oci</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="iamge/png" href="Assets/RedRose.png">
+  <title>SantjuRedRose | Oci</title>
 </head>
 <body>
-    <div class="gcontainer"></div>
+  <div class="gcontainer"></div>
 
-    <div class="bk">
-        <h1><img src="Assets/h1.png"></h1>   
-        <h2>OCI</h2>
-        <h3>f</h3>
+  <div class="bk">
+    <h1><img src="Assets/h1.png"></h1>   
+    <h2 class="h2p">OCI</h2>
+    <h3 class="h3p">f</h3>
+</div>
+
+  <!--noticies-->
+
+  
+  <div class="row2">
+
+    <div class="column">
+      <a href="">
+      <img src="https://i.blogs.es/09a281/uncharted400/1366_2000.jpg" alt="Nature" style="width:100%">
+    </a>
+      <h3>INFORMACIÓ SOBRE QUÈ FER DESPRÉS DE L’ESO</h3>
+    </div>
+    <div class="column">
+      <img src="Assets/Fontanals.jpg" alt="Nature" style="width:100%">
+      <h3>ENTREVISTA A UNA EX-ALUMNA</h3>
+      <p style="line-height: 0%;">“L’ESO ÉS LA BASE  PER TOT”</p>
     </div>
 
-    <!--noticies-->
+  </div>
 
-    
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="Assets/uncharted.jpg" style="width:100%">
-      <div class="text"><a href="https://docs.google.com/document/d/13m5_XbtPS-Fo_Phz2FJnLs_nakXTYqbh/edit">LLEGEIX MES</a></div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="Assets/Fontanals.jpg" style="width:100%">
-      <div class="text"><a href="#">LLEGEIX MES</a></div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="Assets/hero-bg.jpg" style="width:100%">
-      <div class="text"><a href="#">LLEGEIX MES</a></div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <a href="#" class="f1">SANTJU RED ROSE</a><br><br>
-                    <a href="Form.html" class="f1">Envia una carta!</a>
-                    <p class="f1">Designed by <a style="color: red;"href="https://github.com/sharpshifter2">collez</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-
-    
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <a href="#" class="f1">SANTJU RED ROSE</a><br><br>
+                  <a href="Form.html" class="f1">Envia una carta!</a>
+                  <p class="f1">Designed by <a style="color: red;"href="https://github.com/sharpshifter2">collez</a></p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  
 
 </body>
