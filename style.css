@@ -124,6 +124,17 @@ h3{
   clear: both;
 }
 
+.item{
+  width:200px;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  float:left;
+}
+
 footer{
     text-align: center;
     background-color: rgba(8, 8, 8, 0.89);
@@ -154,6 +165,10 @@ footer{
   .footer-col{
     width: 100%;
     padding: 0 15px;
+ }
+
+ .tt{
+
  }
 
 
