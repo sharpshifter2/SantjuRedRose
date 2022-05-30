@@ -1,29 +1,23 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBOOprPhK5Gg2CBv6KlGgqqVyfVgB--rXY",
-    authDomain: "webs-database.firebaseapp.com",
-    databaseURL: "https://webs-database-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "webs-database",
-    storageBucket: "webs-database.appspot.com",
-    messagingSenderId: "272279277711",
-    appId: "1:272279277711:web:bb19cb89d880c292ca60fa",
-    measurementId: "G-BT2WT1H622"
-  };
+  apiKey: "AIzaSyDVdC0ZgBSKVTWQfEkiEG_Ynd6-bOw1j0E",
+  authDomain: "cartes-21810.firebaseapp.com",
+  projectId: "cartes-21810",
+  storageBucket: "cartes-21810.appspot.com",
+  messagingSenderId: "467106847225",
+  appId: "1:467106847225:web:0ceff90e9e3a13f8bbc528",
+  measurementId: "G-5KPEJNLSRQ"
+};
+function writeData(){
+    firebase.database().ref("User").set({
+        name:document.getElementById("nom"). value,
+        age:document.getElementById("text").value
+    });
+}
 
-  firebase.initializeApp(firebaseConfig);
 
-  var contactFormDB = firebase.database().ref('contactForm');
-
-  document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-  function submitForm(e) {
-      e.preventDefault();
-
-      var nom = getElementVal("nom");
-      var text = getElementVal("text");
-
-      console.log(nom, text);
-  }
-
-  const getElementVal = (id) => {
-      return document.getElementById(id).value;
-  };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
