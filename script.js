@@ -1,23 +1,39 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+src = "https://www.gstatic.com/firebasejs/3.7.4/firebase.js"
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDVdC0ZgBSKVTWQfEkiEG_Ynd6-bOw1j0E",
-  authDomain: "cartes-21810.firebaseapp.com",
-  projectId: "cartes-21810",
-  storageBucket: "cartes-21810.appspot.com",
-  messagingSenderId: "467106847225",
-  appId: "1:467106847225:web:0ceff90e9e3a13f8bbc528",
-  measurementId: "G-5KPEJNLSRQ"
+
+var firebaseConfig = {
+ 
 };
-function writeData(){
-    firebase.database().ref("User").set({
-        name:document.getElementById("nom"). value,
-        age:document.getElementById("text").value
-    });
+
+firebase.initializeApp(firebaseConfig);
+
+var messagesRef = firebase.database()
+  .ref('Collected Data');
+
+document.getElementById('contactForm')
+  .addEventListener('submit', submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('nom');
+  var email = getInputVal('text');
+
+  saveMessage(nom, text);
+  document.getElementById('contactForm').reset();
 }
 
+// Function to get get form values
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// Save message to firebase
+function saveMessage(name, email) {
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+  });
+}
