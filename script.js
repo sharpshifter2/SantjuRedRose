@@ -1,39 +1,16 @@
-src = "https://www.gstatic.com/firebasejs/3.7.4/firebase.js"
+const {createPool} = require('mysql2/promise');
 
+async function main(){
 
-var firebaseConfig = {
- 
-};
-
-firebase.initializeApp(firebaseConfig);
-
-var messagesRef = firebase.database()
-  .ref('Collected Data');
-
-document.getElementById('contactForm')
-  .addEventListener('submit', submitForm);
-
-function submitForm(e) {
-  e.preventDefault();
-
-  // Get values
-  var name = getInputVal('nom');
-  var email = getInputVal('text');
-
-  saveMessage(nom, text);
-  document.getElementById('contactForm').reset();
-}
-
-// Function to get get form values
-function getInputVal(id) {
-  return document.getElementById(id).value;
-}
-
-// Save message to firebase
-function saveMessage(name, email) {
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    email: email,
+  const conn = await createPool({
+    database: 'diari',
+    user: 'opo90rrtcyof',
+    host: 'ku16rbi13smn.eu-central-2.psdb.cloud',
+    password: 'pscale_pw_BuUk03bfvVZddtzOEGXdQ8qdQNYw9dER4JeBHmDaUuo',
+    ssl: {rejectUnauthorized: false}
   });
+
+  console.log('ready!');
 }
+
+main();
