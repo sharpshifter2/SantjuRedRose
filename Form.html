@@ -1,16 +1,14 @@
 <head>
     <link rel="stylesheet" href="Form.css">
+    <script src="script.js"></script>
     <title>SantjuRedRose | Cartes al director</title>
     <link rel="shortcut icon" type="iamge/png" href="Assets/RedRose.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap"
         rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <form action="/" method="post" id="contactForm">
+    <form action="script.js" method="post">
         <img src="Assets/form header.png">
         <h5>FES UNA CARTA</h5>
         <hr>
@@ -18,11 +16,11 @@
         <br>
         <div class="Text">
             <p><input type="text" name="nom" placeholder="Nom i Cognom:" id="nom"></p><br>
-            <p><textarea cols=50 rows=8 name="text" placeholder="Fes una Carta:" id="text"></textarea></p>
+            <p><textarea cols=50 rows=8 name="text" placeholder="Fes una Carta:" id="text" ></textarea></p>
             <table width="400">
                 <tr>
                     <td>
-                        <div class="btn"><input type="submit" value="Enviar" name="send"></div><br>
+                        <div class="btn"><input type="submit" value="Enviar" name="send" onclick="main();"></div><br>
                     </td>
                     <td class="info">
                         <a href="/info.html">Clica per veure les respostes</a>
